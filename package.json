@@ -1,0 +1,13 @@
+{
+  "name": "es6",
+  "type":"module",
+  "version": "1.0.0",
+  "description": "This is to show ES6 programming",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "abcd",
+  "license": "ISC"
+}
