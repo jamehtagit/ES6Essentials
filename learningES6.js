@@ -1,9 +1,11 @@
-import Add from './includeinES6.js'
-import {subtract} from './includeinES6.js'
+import Add, {subtract}from './includeinES6.js'
+
 
 ///////////////////////////////////////
 //Below Examples are shown in class 1//
 ////////////////////////////////////////
+
+
 
 //Example 8: Working with import and export, named and default exports///
 console.log(Add(1,2,3))
@@ -44,7 +46,7 @@ for (let i=0;i<10;i++)
     setTimeout(()=>{console.log(i)},1000)
 }
 }
-withLet()
+//withLet()
 /////End of Example 1////////
 
 //Example 2://///////
@@ -58,7 +60,7 @@ for (var i=0;i<10;i++)
 }
 }
 
-withVar()
+//withVar()
 
 //End of Example 2////////
 
@@ -68,15 +70,39 @@ withVar()
 
 ///Example 3 : Arrow function and literal string///
 
-let objschool = {name:'Narseemonjee institue of management',
+let Objemp = {firstname:'Robert',lastname:'Dilingo'}
+/*let objemp1 = Objemp //copying into objemp1
+
+console.log(objemp1)
+
+objemp1.firstname = 'Joe'
+
+console.log(objemp1)
+
+console.log(Objemp) //I only want change the key on copied version and not on the actual object//
+*/
+let objusewithassign ={}
+Object.assign(objusewithassign,Objemp)
+
+console.log(objusewithassign)
+
+objusewithassign.firstname = 'Joe'
+
+console.log(objusewithassign)
+console.log(Objemp)
+
+
+
+/*let objschool = {name:'Narseemonjee institue of management',
                  Ranking:'Top 10',
                 Course:"Accounts and Finance",
                 displayInfo:function abc(){
                 
-                    () =>
+                   let abcinner =  () =>
                     {
                         console.log(`${this.name} is ${this.Ranking} and specializes in ${this.Course}`)
                     }
+                     abcinner()
                     
                     }
         }
@@ -106,7 +132,7 @@ let array1 =arrayofnumber.map((num,index)=>
 }
 )
 
-console.log(arrayofnumber.filter((num) => num !== 80))
+console.log(arrayofnumber.filter((num) => num !== 80))*/
 
 
 
